@@ -1,0 +1,190 @@
+.contain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5%;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+    }
+}
+.content{
+    border: 1px solid $color-black;
+    padding: 2%;
+}
+/* .menu-nav{
+    @media screen and (min-width: 768px) {
+        grid-column: 1/ 3;
+    
+    }
+} */
+
+.header{ 
+    display: flex; 
+    @media screen and (min-width: 768px) {
+        grid-column: 1/ 3;
+        grid-row: 1/ 3;
+    
+    }
+   
+}
+.html-css{
+    display: grid;
+    border: 1px dotted $color-black;
+    padding: 5% 3%;
+    margin-bottom: 5%;
+    @media screen and (min-width: 768px) {
+        grid-column: 1/ 2;
+        grid-row: 3/ 4;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+    &__p{
+        line-height: 2;
+    }
+    &__h1{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: calc(1.325rem + .9vw);
+        margin: 3% 0;
+    }
+    &__teacher{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        margin: 3% 0;
+    }
+    &__icon-a{
+        text-decoration: none;
+        color: $color-black;
+        margin-left: 2%;
+    }
+}
+.sass{
+    display: grid;
+    border: 1px dotted $color-black;
+    padding: 5% 3%;
+    @media screen and (min-width: 768px) {
+        grid-column: 1/ 2;
+        grid-row: 4/ 5;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+    &__p{
+        line-height: 2;
+    }
+    &__h2{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 3% 0;
+    }
+    &__teacher{
+        font-family: 'Ubuntu', sans-serif;
+        margin: 3% 0;
+        font-weight: 700;
+    }
+    &__icon-a{
+        text-decoration: none;
+        color: $color-black;
+        margin-left: 2%;
+    }
+}
+.cursos{
+    display: grid;
+    padding: 5% 3%;
+    @media screen and (min-width: 768px) {
+        grid-column: 2/ 3;
+        grid-row: 3/ 5;
+    }
+    &__img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 1px solid $color-black;
+    }
+    &__img-tittle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__list{
+        list-style: circle;
+        margin-left: 4%;
+    }
+    &__svg{
+        display: flex;
+        justify-content: center;
+    }
+    &__tittle-list{
+        display: flex;
+        justify-content: center;
+        background-color: $color-sable;
+        color: $color-white;
+        margin: 3% 0;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: $fz-large;
+        line-height: 1.8;
+    }
+    &__list-a{
+        text-decoration: none;
+    }
+    &__p{
+        line-height: 2;
+    }
+    &__h2{
+        margin: 3% 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    &__icon-a{
+        text-decoration: none;
+        color: $color-black;
+    }
+}
+  
+.footer{
+    display: grid;
+    background-color: $color-black;
+    color: $color-white;
+    justify-items: center;
+    padding: 10% 0;
+    @media screen and (min-width: 768px) {
+        grid-column: 1/ 3;
+        justify-items: center;
+        padding: 5% 0;
+    }
+    &__copy{
+        @media screen and (min-width: 768px) {
+            grid-column: 1/ 2;
+        }
+    }
+    &__legal{
+        @media screen and (min-width: 768px) {
+            grid-column: 2/ 3;
+            display: flex;
+            
+        }
+    }
+    &__legal-a{
+        color: $color-white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+            margin-left: 1%;
+        }
+    }
+    &__btn{
+       @extend %btn-primary;
+       padding: 1%;
+
+    }
+    &__input{
+        @extend %input-email;
+    }
+   
+}

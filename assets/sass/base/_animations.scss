@@ -1,0 +1,60 @@
+.bg-nut{
+    animation: roll 4s infinite linear;
+    transform: rotate(360deg);
+    -webkit-animation: roll 4s infinite linear;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform-box: fill-box;
+    transform-origin: center;
+}
+.nut-center{
+    animation: roll 4s infinite linear;
+    transform: rotate(360deg);
+    -webkit-animation: roll 4s infinite linear;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.codigo{
+    animation: translateY 1s infinite;
+    animation-direction: alternate;
+    -webkit-animation: translateY 1s infinite;
+}
+
+@keyframes roll {
+    0% {
+      transform: rotate(1deg);
+      -webkit-transform: rotate(1deg);
+      -moz-transform: rotate(1deg);
+      -ms-transform: rotate(1deg);
+      -o-transform: rotate(1deg);
+}
+    100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+}
+}
+
+
+
+@keyframes translateY {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(20%, 0);
+      -webkit-transform: translate(20%, 0);
+      -moz-transform: translate(20%, 0);
+      -ms-transform: translate(20%, 0);
+      -o-transform: translate(20%, 0);
+}
+  }
